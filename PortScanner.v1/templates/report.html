@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>PORT SCAN by Guasta Report</title>
+<style>
+body { background:#0b0c10; color:#c5c6c7; font-family:Arial; padding:20px; }
+h1 { color:#66fcf1; }
+table { border-collapse: collapse; width:100%; }
+th, td { border:1px solid #45a29e; padding:8px; text-align:center; }
+th { background:#1f2833; }
+.CRITICAL { color:red; font-weight:bold; }
+.HIGH { color:orange; font-weight:bold; }
+.MEDIUM { color:yellow; }
+.LOW { color:lightgreen; }
+</style>
+</head>
+<body>
+
+<h1>PORT SCAN by Guasta</h1>
+<p><b>Target:</b> {{TARGET}}</p>
+<p><b>Mode:</b> {{MODE}}</p>
+<p><b>Date:</b> {{DATE}}</p>
+
+<table>
+<tr>
+<th>Port</th><th>Status</th><th>Banner</th><th>Severity</th>
+</tr>
+{{RESULTS}}
+</table>
+
+</body>
+</html>
